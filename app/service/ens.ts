@@ -1,4 +1,4 @@
-import { ExternalEnsDataResponse } from "../api/types/external";
+import { ExternalEnsDataResponse } from "../types/external";
 import { get } from "../lib/fetch";
 
 export async function fetchEns(address: string): Promise<string> {
