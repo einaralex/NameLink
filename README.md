@@ -9,7 +9,7 @@ Fetch address names.
 
 ## Endpoints
 
-### GET /api/address/:address
+### GET /address/:address
 
 ```
 {
@@ -19,7 +19,7 @@ Fetch address names.
 }
 ```
 
-### GET /api/health
+### GET /health
 
 ```
 {

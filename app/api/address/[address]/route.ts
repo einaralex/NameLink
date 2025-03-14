@@ -9,9 +9,9 @@ export async function GET(
   const { address } = params;
 
   const ens = await fetchEns(address);
-  const cluster = await fetchClustersName(address);
+  const clusters = await fetchClustersName(address);
 
-  if (!ens && !cluster) {
+  if (!ens && !clusters) {
     return NextResponse.json(
       {
         error: "Not found",
@@ -24,6 +24,6 @@ export async function GET(
   return NextResponse.json({
     address,
     ens: ens || null,
-    cluster: cluster || null,
+    clusters: clusters || null,
   });
 }
